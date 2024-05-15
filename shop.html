@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/header_&_footer.css">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+            margin: -4% 0 0 0;
+            padding: 0;
+            display: block;
+        }
+        body{
+            margin: 0;
+            background-color: #ffffff;
+        }
+        header{
+            background-color: #1c3b2b;
+            padding: 60px 50px 50px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: static;!important
+            width: 100%;
+            z-index: 100;
+        }
+        .cart h1 {
+            color: black;
+            font-weight: bold;
+            margin: 0 0 0 25%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-family: "Montserrat", Helvetica, Arial, sans-serif, "Imprint MT Shadow";
+        }
+        .cart {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            color: black;
+            width: 500px;
+            background-image: url("assets/forest3.jpg");
+            background-color: black;
+            height: 100vh;
+            transition: 0.5s;
+        }
+        footer{
+            position: static;
+            display: flex;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<header>
+
+    <a href="index.html"><img src="assets/icon/Untitled-1-Recovered-Recovered.png" id="nav-logo" alt=""></a>
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#blog">Blog</a>
+        <div class="shopping">
+            <img src="assets/icons8-cart-80.png" alt="shopping" />
+            <span class="quantity">0</span>
+
+        </div>
+    </nav>
+</header>
+<section>
+<div class="container">
+    <div class="list"></div>
+</div>
+
+<div class="cart">
+    <h1>Shopping Cart</h1>
+    <ul class="listCard"></ul>
+
+    <div class="checkout">
+        <div class="total">Net Total: 0</div>
+        <h2>
+        <button class="proceedCheckout" id="checkout">
+            CheckOut
+        </button>
+        </h2>
+    </div>
+    <div class="closeShopping">Close Cart</div>
+</div>
+</section>
+<footer>
+    <div class="wrapper_footer">
+
+        <div class="footer-left">
+            <img src="assets/icon/ftguyfiu.jpg" alt="icon">
+            <img src="assets/icon/projectlogo.jpg" alt="logo">
+
+            <p class="footer-nav"><a href="index.html">HOME </a> | <a href="shop.html">SHOP</a> | <a href="volunteer.html">VOLUNTEER REGISTER</a> | <a href="#">GALLERY</a> | <a href="team.html">OUR TEAM</a></p>
+
+            <p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a>
+            </p>
+        </div>
+        <div class="footer-right">
+            <a href="#" class="social facebook">Facebook</a>
+            <a href="#" class="social twitter">Facebook</a>
+            <a href="#" class="social google">Facebook</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+
+<script src="js/shop.js"></script>
+</body>
+</html>
